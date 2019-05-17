@@ -7,7 +7,6 @@ package einterfaces
 
 import (
 	"github.com/hashicorp/memberlist"
-	"github.com/mattermost/mattermost-server/einterfaces"
 	"github.com/mattermost/mattermost-server/model"
 )
 
@@ -20,7 +19,7 @@ type ClusterInterface interface {
 	NotifyUpdate(node *memberlist.Node)
 	NodeMeta(limit int) []byte
 	NotifyMsg(buf []byte)
-	RegisterClusterMessageHandler(event string, crm einterfaces.ClusterMessageHandler)
+	RegisterClusterMessageHandler(event string, crm ClusterMessageHandler)
 	GetBroadcasts(overhead, limit int) [][]byte
 	LocalState(join bool) []byte
 	MergeRemoteState(buf []byte, join bool)
@@ -34,5 +33,3 @@ type ClusterInterface interface {
 	ConfigChanged(previousConfig *model.Config, newConfig *model.Config, sendToOtherServer bool) *model.AppError
 	SendClusterMessage(msg *model.ClusterMessage)
 }
-
-	

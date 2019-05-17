@@ -13,5 +13,3 @@ import (
 type DataRetentionInterface interface {
 	GetPolicy() (*model.DataRetentionPolicy, *model.AppError)
 }
-
-	

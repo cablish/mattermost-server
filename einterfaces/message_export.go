@@ -16,5 +16,3 @@ type MessageExportInterface interface {
 	StartSynchronizeJob(ctx context.Context, exportFromTimestamp int64) (*model.Job, *model.AppError)
 	RunExport(exportType string, since int64) *model.AppError
 }
-
-	

@@ -43,5 +43,3 @@ type MetricsInterface interface {
 	IncrementPostsSearchCounter()
 	ObservePostsSearchDuration(elapsed float64)
 }
-
-	

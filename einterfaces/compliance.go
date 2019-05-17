@@ -14,5 +14,3 @@ type ComplianceInterface interface {
 	RunComplianceJob(job *model.Compliance) *model.AppError
 	StartComplianceDailyJob()
 }
-
-	

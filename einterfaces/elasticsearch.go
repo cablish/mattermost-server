@@ -29,5 +29,3 @@ type ElasticsearchInterface interface {
 	PurgeIndexes() *model.AppError
 	DataRetentionDeleteIndexes(cutoff time.Time) *model.AppError
 }
-
-	

@@ -17,5 +17,3 @@ type SamlInterface interface {
 	DoLogin(encodedXML string, relayState map[string]string) (*model.User, *model.AppError)
 	GetMetadata() (string, *model.AppError)
 }
-
-	

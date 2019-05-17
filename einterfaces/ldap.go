@@ -56,5 +56,3 @@ type LdapInterface interface {
 	LinkedReachableGroups(userAuthData string) ([]*model.Group, *model.AppError)
 	FirstLoginSync(userId, userAuthService, userAuthData string) *model.AppError
 }
-
-	
